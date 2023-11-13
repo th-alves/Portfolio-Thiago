@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72
+  );
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 14px 0;
+}
+
+#burguer {
+  display: none;
+}
+
+/* Menu */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; 
+}
+
+/* Conteudo Principal */
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 1px solid #fff;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.conteudo img {
+  animation: take-off-rocket 6s ease-in-out infinite alternate;
+  width: 400px;
+}
+
+.text-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.text-header h1 {
+  font: 400 64px 'Righteous', cursive;
+  color: #fff;
+}
+
+.text-header h2 {
+  font: 400 24px 'Sarala', sans-serif;
+  color: #ECD6CE;
+}
+
+.text-header button {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.2);
+
+  font: 400 16px 'Sarala', sans-serif;
+  color: #2f2325;
+  transition: background-color .7s ease; 
+}
+
+.text-header button:hover {
+  background-color: rgba(236, 214, 196, .53); 
+  cursor: pointer;
+}
+
+/* Conteudo à Parte */
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  text-align: center;
+
+  margin: 48px 0;
+}
+
+aside li {
+  list-style: none;
+  font: 300 18px 'Sarala', sans-serif;
+  color: #dcdbff;
+}
+
+aside h3 {
+  border-top: 1px solid #fff2e7;
+  padding-top: 48px;
+  margin-bottom: 16px;
+
+  font: 400 24px 'Righteous', cursive;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px;
+  border-top: 1px solid #fff2e7;
+
+  font: 400 .8rem 'Sarala', sans-serif;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+footer i {
+  font-size: 1.3rem;
+  color: black;
+}
+
+/* Animation */
+@keyframes take-off-rocket {
+  0% {
+      transform: translateY(5vh);
+  }
+  50% {
+      transform: translateY(-5vh); 
+  }
+  100% {
+      transform: translateY(5vh);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    height: 100%;
+  }
+
+  #burguer {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 20px 7%;
+  }
+
+  header i {
+    font-size: 2rem;
+  }
+
+  .conteudo img {
+    width: 200px;
+  }
+
+  .conteudo {
+    flex-flow: column wrap;
+  }
+
+  .conteudo .text-header {
+    padding: 40px 7%;
+  }
+
+  .conteudo .text-header h1, h2, button{
+    text-align: center;
+    margin: auto;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    height: 100%;
+  }
+
+  .conteudo .text-header {
+    padding: 40px 7%;
+  }
+
+  .conteudo {
+    flex-flow: column wrap;
+  }
+
+  .conteudo .text-header h1, h2, button{
+    text-align: center;
+    margin: auto;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+}
