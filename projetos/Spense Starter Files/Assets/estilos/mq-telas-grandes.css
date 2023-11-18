@@ -1,0 +1,227 @@
+:root {
+    --bg-color: #fff6e9;
+    --p-color: #808080;
+    --link-color: #636363;
+
+    /* text */
+    --logo: 1.5rem;  /*24px*/
+    --title-h1: 2.25rem; /* 36px */
+    --title-h2: 1.875rem; /* 30px */
+    --title-h3: 1.5rem; /* 24px */
+    --line-height-p: 1.5rem; /* 24px */
+
+    /* padding */
+    --padding-peq: 0.875rem; /* 14px */
+    --padding-med: 1rem; /* 16px */
+    --padding-gr: 1.5rem; /* 24px */
+    --padding-xxl: 7%; /* 132px */
+    /* padding navbar */
+    --padding-mobile: 1.5rem; /* 24px */
+
+    /* margin */
+    --margin-peq: 0.875rem; /* 14px */
+    --margin-med: 1rem; /* 16px */
+    --margin-gr: 1.5rem; /* 24px */
+    --margin-xxl: 7%; /* 132px */
+}
+/* Config Tablet */
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    /* NavBar Tablet Config */
+    #navigation {
+        border: none;
+        padding: var(--padding-mobile);
+    }
+
+    #navigation nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #navigation ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    #navigation li {
+        list-style: none;
+        padding-right: var(--padding-peq);
+    }
+
+    #navigation li:not(#btn){
+        padding-right: 0;
+    }
+
+    #navigation li a:not(#btn) {
+        text-decoration: none;
+        color: var(--link-color);
+    }
+
+    #navigation li a:not(#btn):hover {
+        text-decoration: underline;
+    }
+
+    #navigation #logo-burguer img {
+        display: none;
+    }
+
+    /* Logos */
+    #logos .pinterest,
+    .twitter {
+        display: block;
+    }
+
+    #second-block {
+        padding: var(--padding-xxl) var(--padding-xxl) 0;
+    }
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: var(--padding-xxl);
+    }
+
+    footer #footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer #about-spense {
+        padding: 0;
+    }
+}
+
+/* Config PC */
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    /* NavBar PC Config */
+    #navigation {
+        border: none;
+        padding: var(--padding-mobile) 7%;
+    }
+
+    #navigation nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #navigation ul {
+        display: flex;
+    }
+
+    #navigation li {
+        list-style: none;
+        padding-right: var(--padding-peq);
+    }
+
+    #navigation li a:not(#btn) {
+        text-decoration: none;
+        color: var(--link-color);
+    }
+
+    #navigation li a:not(#btn):hover {
+        text-decoration: underline;
+    }
+
+    #navigation #logo-burguer img {
+        display: none;
+    }
+
+    /* Bloco 1 PC Config */
+    header #first-block {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        align-items: center;
+        margin: var(--margin-gr) var(--margin-xxl);
+        padding-bottom: var(--padding-gr);
+    }
+
+    header #first-block .first-block-text {
+        order: 0;
+    }
+
+    header #first-block .first-block-text h1 {
+        font-size: calc(var(--title-h1) + .5vw);
+    }
+
+    header #first-block .first-block-text p {
+        width: 60%;
+        font-size: calc(16px + .2vw);
+    }
+
+    /* Bloco 1 - Picture PC Config */
+    header #first-block-img {
+        margin-right: var(--margin-med);
+    }
+
+    header #first-block-img img {
+        width: 400px;
+    }
+
+    /* Logos */
+    #logos .pinterest,
+    .twitter,
+    .reddit,
+    .google,
+    .slack {
+        display: block;
+    }
+
+    /* Bloco 2 Config */
+    #second-block {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        align-items: center;
+        gap: 40px;
+
+        padding: var(--padding-gr) var(--padding-xxl) 0;
+        margin: var(--margin-gr) var(--margin-xxl);
+    }
+
+    #second-block picture img {
+        width: 400px;
+    }
+
+    #second-block .second-block-text p {
+        width: 80%;
+    }
+
+    /* Bloco 3 Config */
+    #block-thirdy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        margin: var(--margin-xxl);
+    }
+
+    #block-thirdy .bloco-thirdy-text {
+        order: 2;
+    }
+
+    #block-thirdy .bloco-thirdy-img {
+        margin: 0;
+        width: 600px;
+    }
+
+    #block-thirdy .bloco-thirdy-img img {
+        width: 500px;
+    }
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: var(--padding-xxl);
+    }
+
+    footer #footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer #about-spense {
+        padding: 0;
+    }
+}
