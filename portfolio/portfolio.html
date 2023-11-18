@@ -1,428 +1,550 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/th-logo.ico">
-    <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/th-logo.ico" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <title>Thiago Souza | Personal Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--contains all the div-->
     <div id="all">
-    <!--mouse  follower-->
-        <div class="cursor"></div>
-    <!--mouse  follower-->
-    <!--loader-->
-        <div id="loader">
-            <span class="color">Thiago</span>Souza 
+      <!--mouse  follower-->
+      <div class="cursor"></div>
+      <!--mouse  follower-->
+      <!--loader-->
+      <div id="loader"><span class="color">Thiago</span>Souza</div>
+      <!--loader-end-->
+      <!--link-screen-->
+      <div id="breaker"></div>
+      <div id="breaker-two"></div>
+      <!--link-screen-->
+      <!--Main-Section-->
+      <!--Navigator-fullscreen-->
+      <div id="navigation-content">
+        <div class="logo">
+          <img src="images/th-logo.png" alt="logo escrito Th" />
         </div>
-    <!--loader-end-->
-    <!--link-screen-->
-        <div id="breaker">
+        <div class="navigation-close">
+          <span class="close-first"></span>
+          <span class="close-second"></span>
         </div>
-        <div id="breaker-two">
+        <div class="navigation-links">
+          <a href="#" data-text="HOME" id="home-link">INÍCIO</a>
+          <a href="#" data-text="ABOUT" id="about-link">SOBRE MIM</a>
+          <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+          <a href="#" data-text="CONTACT" id="contact-link">CONTATO</a>
         </div>
-    <!--link-screen-->
-        <!--Main-Section-->
-        <!--Navigator-fullscreen-->
-        <div id="navigation-content">
-            <div class="logo">
-                <img src="images/th-logo.png" alt="logo escrito Th">
-            </div>
-            <div class="navigation-close">
-                <span class="close-first"></span>
-                <span class="close-second"></span>
-            </div>
-            <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >INÍCIO</a>
-                <a href="#" data-text="ABOUT" id="about-link" >SOBRE MIM</a>
-                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
-                <a href="#" data-text="CONTACT" id="contact-link" >CONTATO</a>
-            </div>
+      </div>
+      <!--Navigator-Fullscreen END-->
+      <!--Home Page-->
+      <!--Menubar-->
+      <div id="navigation-bar">
+        <img src="images/th-logo.png" alt="logo escrito Th" />
+        <div class="menubar">
+          <span class="first-span"></span>
+          <span class="second-span"></span>
+          <span class="third-span"></span>
         </div>
-        <!--Navigator-Fullscreen END-->
-          <!--Home Page-->
-        <!--Menubar-->
-        <div id="navigation-bar">
-            <img src="images/th-logo.png" alt="logo escrito Th">
-            <div class="menubar">
-                <span class="first-span"></span>
-                <span class="second-span"></span>
-                <span class="third-span"></span>
-            </div>
+      </div>
+      <!--Menubar End-->
+      <!--Header-->
+      <div id="header">
+        <div id="particles"></div>
+        <!--Social Media Links-->
+        <div class="social-media-links">
+          <a href="https://www.instagram.com/th_ntc/" target="_blank"
+            ><img
+              src="images/instagram logo.png"
+              class="social-media"
+              alt="instagram-logo"
+          /></a>
+          <a href="https://github.com/th-alves" target="_blank"
+            ><img
+              src="images/github.png"
+              class="social-media"
+              alt="github-logo"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/thiago-alves-265823236/"
+            target="_blank"
+            ><img
+              src="images/linkedin logo.png"
+              class="social-media"
+              alt="linkedin-logo"
+          /></a>
+          <a href="https://twitter.com/speedyx02" target="_blank"
+            ><img
+              src="images/twitter logo.png"
+              class="social-media"
+              alt="twitter-logo"
+          /></a>
         </div>
-        <!--Menubar End-->
-          <!--Header-->
-        <div id="header">
-            <div id="particles"></div>
-              <!--Social Media Links-->
-            <div class="social-media-links">
-               <a href="https://www.instagram.com/th_ntc/" target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
-                <a href="https://github.com/th-alves" target="_blank"><img src="images/github.png" class="social-media" alt="github-logo"></a>
-                <a href="https://www.linkedin.com/in/thiago-alves-265823236/" target="_blank"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="https://twitter.com/speedyx02" target="_blank"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+        <!--Social Media Links end-->
+        <div class="header-content">
+          <div class="header-content-box">
+            <div class="firstline"><span class="color">Thiago </span>Souza</div>
+            <div class="secondline">
+              I'm a
+              <span
+                class="txt-rotate color"
+                data-period="1200"
+                data-rotate='[ " Dev Front-end.", " Freelancer." ]'
+              ></span>
+              <span class="slash">|</span>
             </div>
-            <!--Social Media Links end-->
-            <div class="header-content">
-                <div class="header-content-box">
-                <div class="firstline"><span class="color">Thiago </span>Souza</div>
-                <div class="secondline">
-                I'm a
-            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Dev Front-end.", " Freelancer." ]'></span>
-            <span class="slash">|</span>
+            <div class="contact">
+              <a href="Mailto:snoop.thiago01@gmail.com"
+                ><img src="images/mail.png" alt="email-pic" class="contactpic"
+              /></a>
+              <a href="Tel:+5511992435311"
+                ><img src="images/call.png" alt="phone-pic" class="contactpic"
+              /></a>
+            </div>
+          </div>
         </div>
-                    <div class="contact">
-                <a href="Mailto:snoop.thiago01@gmail.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a>
-                <a href="Tel:+5511992435311"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>  
-                    </div>    
-            </div>
-            </div>
-            <!--header image-->
-            <div class="header-image">
-            <img src="images/eu.png" alt="foto do dono do Portfolio">
-            </div>
-            <!--header image end-->
+        <!--header image-->
+        <div class="header-image">
+          <img src="images/eu.png" alt="foto do dono do Portfolio" />
         </div>
-           <!--Header End-->
-        <!--HomePage End-->
-        <!--Main-Section End-->
-        <!--about-->
-        <div id="about">
-            <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="icon settings">
+        <!--header image end-->
+      </div>
+      <!--Header End-->
+      <!--HomePage End-->
+      <!--Main-Section End-->
+      <!--about-->
+      <div id="about">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="icon settings" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Cores</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
             </div>
-            <div class="color-selector">
-                <div class="heading">Cores</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <!--about content-->
-            <div id="about-content">
-                <div class="about-header">
-                    Sobre <span class="color">Mim</span>
-                    <span class ="header-caption"><span class="color"></span></span>
-                </div>
-                <div class="about-main">
+          </div>
+        </div>
+        <!--about content-->
+        <div id="about-content">
+          <div class="about-header">
+            Sobre <span class="color">Mim</span>
+            <span class="header-caption"><span class="color"></span></span>
+          </div>
+          <div class="about-main">
             <div class="about-first-paragraph wow">
-            <!--about description-->
-               <span class="about-first-line">
-                Sou um 
-                    <span class="color">Web Developer</span>
-                    apaixonado por criar experiências digitais envolventes.</span>
-                     <br>
-               <span class="about-second-line"> Sempre buscando aprender e evoluir, estou comprometido em seguir as melhores práticas da indústria e acompanhar as tendências mais recentes. Minha paixão pela programação se traduz em interfaces de usuário intuitivas e visualmente atraentes. Estou pronto para colaborar em projetos desafiadores e contribuir para a melhoria contínua da web.</span>
-               <div class="cv">
-                <a href="download/CV - THIAGO ALVES DE SOUZA.pdf"><button>Download <span class="colors">CV</span></button></a>
-            </div>
+              <!--about description-->
+              <span class="about-first-line">
+                Sou um
+                <span class="color">Web Developer</span>
+                apaixonado por criar experiências digitais envolventes.</span
+              >
+              <br />
+              <span class="about-second-line">
+                Sempre buscando aprender e evoluir, estou comprometido em seguir
+                as melhores práticas da indústria e acompanhar as tendências
+                mais recentes. Minha paixão pela programação se traduz em
+                interfaces de usuário intuitivas e visualmente atraentes. Estou
+                pronto para colaborar em projetos desafiadores e contribuir para
+                a melhoria contínua da web.</span
+              >
+              <div class="cv">
+                <a href="download/CV - THIAGO ALVES DE SOUZA.pdf"
+                  ><button>Download <span class="colors">CV</span></button></a
+                >
+              </div>
             </div>
             <!--about picture-->
             <div class="about-img">
-                <img src="images/working-team.png" alt="animação de pessoas trabalhando junto">
+              <img
+                src="images/working-team.png"
+                alt="animação de pessoas trabalhando junto"
+              />
             </div>
-            </div>
-    
-            </div>
-            <!--services start-->
-            <div id="services">
-                <div class="color-changer">
-                    <div class="color-panel">
-                        <img src="images/gear.png" alt="icon settigns">
-                    </div>
-                    <div class="color-selector">
-                        <div class="heading">Cores</div>
-                        <div class="colors">
-                            <ul >
-                            <li>
-                                <a href="#0" class="color-red " title="color-red"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-purple" title="color-purple"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-malt" title="color-malt"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-green" title="color-green"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-blue" title="color-blue"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-orange" title="color-orange"></a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-            <!--services header-->
-                    <div class="services-heading wow">
-                        <span class="color">Meus</span> Serviços
-                    </div>
-            <!--services header end-->
-            <!--services content-->
-                    <div class="services-content">
-                           <div class="service-one service wow">
-                               <div class="service-img">
-                               <img src="images/coding.png" alt="service-one">
-                               </div>
-                               <div class="service-description">
-                                <h2>Web Designing</h2>
-                                <p>Posso criar websites com um toque pessoal, focando na estética e na usabilidade. Estou comprometido em entender suas necessidades e criar designs que se destaquem.</p>
-                               </div>
-                           </div>
-                           <div class="service-two service wow">
-                               <div class="service-img">
-                               <img src="images/instagram.png" alt="service-two">
-                               </div>
-                               <div class="service-description">
-                                <h2>Social Media</h2>
-                                <p>Estou disposto a criar um conteúdo envolvente e a planejar estratégias para aumentar o engajamento do seu público. Vamos aprender e crescer juntos nas redes sociais.</p>
-                               </div>
-                           </div>
-                           <div class="service-three service wow">
-                            <div class="service-img">
-                               <img src="images/bulb.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>Creative Design</h2>
-                                <p>Vou trabalhar duro para criar designs únicos e atender às suas necessidades criativas, enquanto continuo aprimorando minhas habilidades no processo.</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <!--services content end-->
-            <!--services end-->
-            <div id="skills">
-                <div class="skills-header">
-                     Minhas <span class="color"> Habilidades</span>
-                </div>
-                <div class="skills-content " style="text-align: center;">
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        HTML 
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="html-progress wow">90%</div>
-                    </div>
-                    </div>
-
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        CSS
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="php-progress css-progress wow">80%</div>
-                    </div>
-                    </div> 
-                </div>
-            </div>
+          </div>
         </div>
-        <!--about end-->
-        <!--portfolio-->
-        <div id="portfolio">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="icon settings">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Cores</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            <div class="portfolio-header"> <span class="color"> Meu </span> Portfólio
-            <span class ="header-caption"> Alguns dos meus <span class="color"> Trabalhos</span></span></div>
-             <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/portfolio-first.png" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>TJey Bot</h2>
-                         <p>
-                            Deixe a sua comunidade do Discord segura de um jeito fácil.
-                         </p>
-                         <div class="button"><a href="../projetos/TJey Bot/index.html" target="_blank"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-                 <div class="portfolio portfolio-second">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-second.png" alt="portfolio-second">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Spense.</h2>
-                        <p>
-                            Spense é uma plataforma aberta para indivíduos compartilharem seus pensamentos não filtrados. Discuta os tópicos que você adora e seja pago por fazer exatamente isso.
-                        </p>
-                        <div class="button"><a href="../projetos/Spense/index.html"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-             
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>UI Designing</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
-                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Wow Graphics</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                 </div>
-             </div>
-        <!--portfolio end-->
-        
-        <!--contact-->
-     <div id="contact">
-        <div class="color-changer">
+        <!--services start-->
+        <div id="services">
+          <div class="color-changer">
             <div class="color-panel">
-                <img src="images/gear.png" alt="icon settings">
+              <img src="images/gear.png" alt="icon settigns" />
             </div>
             <div class="color-selector">
-                <div class="heading">Cores</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
+              <div class="heading">Cores</div>
+              <div class="colors">
+                <ul>
+                  <li>
+                    <a href="#0" class="color-red" title="color-red"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-purple" title="color-purple"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-malt" title="color-malt"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-green" title="color-green"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-blue" title="color-blue"></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="color-orange" title="color-orange"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <!--services header-->
+          <div class="services-heading wow">
+            <span class="color">Meus</span> Serviços
+          </div>
+          <!--services header end-->
+          <!--services content-->
+          <div class="services-content">
+            <div class="service-one service wow">
+              <div class="service-img">
+                <img src="images/coding.png" alt="service-one" />
+              </div>
+              <div class="service-description">
+                <h2>Web Designing</h2>
+                <p>
+                  Posso criar websites com um toque pessoal, focando na estética
+                  e na usabilidade. Estou comprometido em entender suas
+                  necessidades e criar designs que se destaquem.
+                </p>
+              </div>
             </div>
-         <div class="contact-header">Quer trabalhar <span class="color"> Comigo?</span>
-        <div class="contact-header-caption"> <span class="color"> Entre em</span> contato</div></div>
+            <div class="service-two service wow">
+              <div class="service-img">
+                <img src="images/instagram.png" alt="service-two" />
+              </div>
+              <div class="service-description">
+                <h2>Social Media</h2>
+                <p>
+                  Estou disposto a criar um conteúdo envolvente e a planejar
+                  estratégias para aumentar o engajamento do seu público. Vamos
+                  aprender e crescer juntos nas redes sociais.
+                </p>
+              </div>
+            </div>
+            <div class="service-three service wow">
+              <div class="service-img">
+                <img src="images/bulb.png" alt="service-three" />
+              </div>
+              <div class="service-description">
+                <h2>Creative Design</h2>
+                <p>
+                  Vou trabalhar duro para criar designs únicos e atender às suas
+                  necessidades criativas, enquanto continuo aprimorando minhas
+                  habilidades no processo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--services content end-->
+        <!--services end-->
+        <div id="skills">
+          <div class="skills-header">
+            Minhas <span class="color"> Habilidades</span>
+          </div>
+          <div class="skills-content" style="text-align: center">
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">HTML</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="html-progress wow">90%</div>
+              </div>
+            </div>
+
+            <div class="skill-html skill">
+              <div class="skill-text">
+                <div class="html">CSS</div>
+              </div>
+              <div class="html-prog wow prog">
+                <div class="php-progress css-progress wow">80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--about end-->
+      <!--portfolio-->
+      <div id="portfolio">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="icon settings" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Cores</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-header">
+          <span class="color"> Meu </span> Portfólio
+          <span class="header-caption">
+            Alguns dos meus <span class="color"> Trabalhos</span></span
+          >
+        </div>
+        <div id="portfolio-content">
+          <div class="portfolio portfolio-first">
+            <div class="portfolio-image">
+              <img src="images/portfolio-first.png" alt="portfolio-first" />
+            </div>
+            <div class="portfolio-text">
+              <h2>TJey Bot</h2>
+              <p>Deixe a sua comunidade do Discord segura de um jeito fácil.</p>
+              <div class="button">
+                <a href="../projetos/TJey Bot/index.html" target="_blank"
+                  ><button>
+                    <span class="index">
+                      Ver Projeto<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-second">
+            <div class="portfolio-image">
+              <img src="images/portfolio-second.png" alt="portfolio-second" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Spense.</h2>
+              <p>
+                Spense é uma plataforma aberta para indivíduos compartilharem
+                seus pensamentos não filtrados. Discuta os tópicos que você
+                adora e seja pago por fazer exatamente isso.
+              </p>
+              <div class="button">
+                <a href="../projetos/Spense/index.html" target="_blank"
+                  ><button>
+                    <span class="index">
+                      Ver Projeto<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-third">
+            <div class="portfolio-image">
+              <img src="images/portfolio-third.jpg" alt="portfolio-third" />
+            </div>
+            <div class="portfolio-text">
+              <h2>UI Designing</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                optio repellat cupiditate expedita eius dignissimos .. Id cumque
+                placeat minima ad laudantium suscipit voluptatem ducimus
+              </p>
+              <div class="button">
+                <a href="#"
+                  ><button>
+                    <span class="index">
+                      Ver Projeto<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio portfolio-fourth">
+            <div class="portfolio-image">
+              <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth" />
+            </div>
+            <div class="portfolio-text">
+              <h2>Wow Graphics</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                optio repellat cupiditate expedita eius dignissimos. Id cumque
+                placeat minima ad laudantium suscipit voluptatem ducimus
+              </p>
+              <div class="button">
+                <a href="#"
+                  ><button>
+                    <span class="index">
+                      Ver Projeto<i class="gg-arrow-right"></i
+                    ></span></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--portfolio end-->
+
+      <!--contact-->
+      <div id="contact">
+        <div class="color-changer">
+          <div class="color-panel">
+            <img src="images/gear.png" alt="icon settings" />
+          </div>
+          <div class="color-selector">
+            <div class="heading">Cores</div>
+            <div class="colors">
+              <ul>
+                <li>
+                  <a href="#0" class="color-red" title="color-red"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-purple" title="color-purple"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-malt" title="color-malt"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-green" title="color-green"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-blue" title="color-blue"></a>
+                </li>
+                <li>
+                  <a href="#0" class="color-orange" title="color-orange"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contact-header">
+          Quer trabalhar <span class="color"> Comigo?</span>
+          <div class="contact-header-caption">
+            <span class="color"> Entre em</span> contato
+          </div>
+        </div>
         <div class="contact-content">
-            <!--Contact form-->
-             <div class="contact-form">
-                 <div class="form-header">
-                    Preencha os campos abaixo.
-                 </div>
-                 <form id="myForm" action="#" method="post">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Nome" class="input-name" required>
-                        <input id="email" type="email" placeholder="Email"  class="input-name" required>
-                    </div>
-                    <input type="text" id="subject" placeholder="Assunto" class="input-subject" required>
-                    <textarea id ="body" class="input-textarea" placeholder="Sua Mensagem"></textarea> 
-                    <button type="button" id ="submit" value="send">Enviar</button> 
-                 </form>
+          <!--Contact form-->
+          <div class="contact-form">
+            <div class="form-header">Preencha os campos abaixo.</div>
+            <form id="myForm" action="#" method="post">
+              <div class="input-line">
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Nome"
+                  class="input-name"
+                  required
+                />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  class="input-name"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Assunto"
+                class="input-subject"
+                required
+              />
+              <textarea
+                id="body"
+                class="input-textarea"
+                placeholder="Sua Mensagem"
+              ></textarea>
+              <button type="button" id="submit" value="send">Enviar</button>
+            </form>
+          </div>
+          <!--Contact form-->
+          <!--Contact information-->
+          <div class="contact-info">
+            <div class="contact-info-header">Informações</div>
+            <div class="contact-info-content">
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-name.png"
+                  class="icon"
+                  alt="name-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Nome</h6>
+                  <p>Thiago Souza</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-location.png"
+                  class="icon"
+                  alt="location-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Localidade</h6>
+                  <p>São Paulo, SP</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-phone.png"
+                  class="icon"
+                  alt="phone-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Telefone</h6>
+                  <p>+55 (11) 9 9243-5311</p>
+                </div>
+              </div>
+
+              <div class="contect-info-content-line">
+                <img
+                  src="./images/icon-email.png"
+                  class="icon"
+                  alt="email-icon"
+                />
+                <div class="contact-info-icon-text">
+                  <h6>Email</h6>
+                  <p>thiagosouza.contato01@gmail.com</p>
+                </div>
+              </div>
             </div>
-            <!--Contact form-->
-            <!--Contact information-->
-            <div class="contact-info">
-                <div class="contact-info-header">
-                    Informações
-                </div>
-                <div class="contact-info-content">
-                <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                    <div class="contact-info-icon-text">
-                        <h6>Nome</h6>
-                        <p>Thiago Souza</p>
-                  </div>
-                </div>
-                <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Localidade</h6>
-                      <p>São Paulo, SP</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Telefone</h6>
-                      <p>+55 (11) 9 9243-5311</p>
-                </div>
-              </div>
-              
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Email</h6>
-                      <p>thiagosouza.contato01@gmail.com</p>
-                </div>
-              </div>
-                </div>
-           </div>
+          </div>
         </div>
         <!--Contact information end-->
-     </div>
+      </div>
     </div>
     <!--contact end-->
     <!--all the divisions-->
@@ -432,7 +554,67 @@
     <script src="js/index.js"></script>
     <!--particles script-->
     <script>
- particlesJS("particles", {"particles":{"number":{"value":120,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":true,"speed":0,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.24463576890600452,"width":1.2626362266116362},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
-</script>
-</body>
+      particlesJS("particles", {
+        particles: {
+          number: { value: 120, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: true, speed: 0, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: false,
+            distance: 0,
+            color: "#ffffff",
+            opacity: 0.24463576890600452,
+            width: 1.2626362266116362,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: false, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>
