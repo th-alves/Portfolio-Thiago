@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #fff7e8;
+    --cor-p: #606060;
+    --cor-p2: #4d25c4;
+    --btn-link-color: #4d25c4;
+
+    /* text */
+    --logo: 1.5rem;  /*24px*/
+    --title-h1: 2.25rem; /* 36px */
+    --title-h2: 1.875rem; /* 30px */
+    --title-h3: 1.5rem; /* 24px */
+    --line-height-p: 1.5rem; /* 24px */
+
+    /* padding */
+    --padding-peq: 0.875rem; /* 14px */
+    --padding-med: 1rem; /* 16px */
+    --padding-gr: 1.5rem; /* 24px */
+    --padding-xxl: 6rem; /* 96px */
+    /* padding navbar */
+    --padding-mobile: 1.5rem; /* 24px */
+    --padding-desktop: 2rem; /* 32px */
+
+    /* margin */
+    --margin-peq: 0.875rem; /* 14px */
+    --margin-med: 1rem; /* 16px */
+    --margin-gr: 1.5rem; /* 24px */
+    --margin-xxl: 6rem; /* 96px */
+
+    /* gap flex/grid */
+    --gap: 2.5rem; /* 40px */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #password svg {
+        left: 95%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+    #left-side {
+        width: 50%;
+        padding: var(--padding-xxl);
+    }
+
+    #password svg {
+        left: 90%;
+    }
+
+    #right-side {
+        display: block;
+        width: 50%;
+        height: 100vh;
+        background-color: #4d25c4;
+        padding: var(--padding-xxl);
+        text-align: center;
+        color: #fff;
+    }
+
+    #right-side img {
+        width: 100%;
+        margin: var(--margin-gr) 0;
+    }
+
+    #right-side .text-right-side h1 {
+        font-size: var(--title-h1);
+    }
+
+    #right-side .text-right-side p{
+        color: #dcdcdc;
+    }
+}

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Quicksand:wght@500&display=swap");
+
+:root {
+  --bg-color: #fff7e8;
+  --cor-p: #606060;
+  --cor-p2: #4d25c4;
+  --btn-link-color: #4d25c4;
+
+  /* text */
+  --logo: 1.5rem; /*24px*/
+  --title-h1: 2.25rem; /* 36px */
+  --title-h2: 1.875rem; /* 30px */
+  --title-h3: 1.5rem; /* 24px */
+  --line-height-p: 1.5rem; /* 24px */
+
+  /* padding */
+  --padding-peq: 0.875rem; /* 14px */
+  --padding-med: 1rem; /* 16px */
+  --padding-gr: 1.5rem; /* 24px */
+  --padding-xxl: 6rem; /* 96px */
+  /* padding navbar */
+  --padding-mobile: 1.5rem; /* 24px */
+  --padding-desktop: 2rem; /* 32px */
+
+  /* margin */
+  --margin-peq: 0.875rem; /* 14px */
+  --margin-med: 1rem; /* 16px */
+  --margin-gr: 1.5rem; /* 24px */
+  --margin-xxl: 6rem; /* 96px */
+
+  /* gap flex/grid */
+  --gap: 2.5rem; /* 40px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+
+/* Left Side */
+#left-side .logo {
+    margin-bottom: var(--margin-gr);
+}
+
+#left-side #logo {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: var(--margin-gr);
+}
+
+#left-side {
+    padding: var(--padding-gr);
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+/* Form */
+form h1 {
+    margin-bottom: var(--margin-peq);
+}
+
+form .value-form {
+    margin-bottom: var(--margin-peq);
+}
+
+form .value-form p {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+form .value-form input {
+    padding: 14px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#password {
+    margin: 0;
+}
+
+#password svg {
+    position: relative;
+    bottom: 35px;
+    left: 90%;
+    cursor: pointer;
+}
+
+/* checkbox */
+#box-btn .box {
+    font-weight: 500;
+}
+
+#box-btn .box a {
+    color: #4d25c4;
+    font-weight: 700;
+}
+
+#box-btn .btn button {
+    margin-top: var(--margin-peq);
+    padding: var(--padding-peq);
+
+    border: none;
+    border-radius: 5px;
+    background-color: #4d25c4;
+    width: 100%;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+
+    transition: background-color .7s ease;
+}
+
+#box-btn .btn button:hover {
+    background-color: #3a1d92;
+}
+
+#box-btn .btn p {
+    font-weight: 500;
+    text-align: center;
+    margin-top: var(--margin-peq);
+}
+
+#box-btn .btn p a {
+    text-decoration: none;
+    color: #4d25c4;
+}
+
+/* Right Side */
+#right-side {
+    display: none;
+}
