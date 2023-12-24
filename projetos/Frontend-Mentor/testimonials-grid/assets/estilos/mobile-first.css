@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+:root {
+  /* Primary Colors */
+  --daniel-violet: hsl(263, 55%, 52%);
+  --jonathan-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --patrick-very-dark: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral Colors */
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+  --kira-grayish-blue: hsl(210, 46%, 95%);
+
+  --text-grey-bg-light: hsl(217, 24%, 37%);
+  --graduate-color: rgba(255, 255, 255, 0.5);
+  --graduate-color-bg-light: rgb(135, 135, 135);
+  --quote-color: rgba(255, 255, 255, 0.7);
+  --quote-color-bg-light: rgb(145, 145, 145);
+
+  /* Margin */
+  --margin-peq: 0.875rem; /* 14px */
+  --margin-med: 1.5rem; /* 24px */
+  --margin-gr: 2rem; /* 32px */
+  --margin-xxl: 3rem; /* 48px */
+
+  /* Padding */
+  --padding-peq: 0.875rem; /* 14px */
+  --padding-med: 1.5rem; /* 24px */
+  --padding-gr: 2rem; /* 32px */
+  --padding-xxl: 3rem; /* 48px */
+
+  /* Fonts */
+  --p-text-size: 1.5rem; /* 24px */
+  --quote-text-size: 0.875rem; /* 14px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Light-grayish-blue);
+}
+
+/* Main */
+main {
+  margin: var(--margin-xxl) var(--margin-med);
+}
+
+main section {
+  margin-bottom: var(--margin-gr);
+  border-radius: 10px;
+  padding: var(--padding-gr);
+  -webkit-box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Name users */
+.user-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: var(--margin-peq);
+}
+
+.user-data img {
+  border-radius: 50%;
+  border: 2px solid lightgray;
+}
+
+/* Title Name Colors */
+#daniel-clifford .user-data h4,
+#jonathan-walters .user-data h4,
+#patrick-abrams .user-data h4 {
+  color: var(--White);
+  font-weight: 400;
+}
+#daniel-clifford .user-data p,
+#jonathan-walters .user-data p,
+#patrick-abrams .user-data p {
+  color: var(--graduate-color);
+  font-size: 0.8rem;
+}
+
+/* Light Text */
+.light-text {
+  color: var(--White);
+  font-size: var(--p-text-size);
+  font-weight: 500;
+  margin-bottom: var(--margin-med);
+}
+
+/* Grey Quote */
+.grey-quote {
+  color: var(--quote-color);
+  line-height: 25px;
+  font-size: var(--quote-text-size);
+}
+
+/* Grey Text */
+.grey-text {
+  color: var(--text-grey-bg-light);
+  font-weight: 700;
+  font-size: var(--p-text-size);
+  margin-bottom: var(--margin-med);
+}
+
+/* Grey Text BgLight */
+.grey-quote-bg-light {
+  color: var(--quote-color-bg-light);
+  font-weight: 500;
+}
+
+/* BgLight Name Graduate */
+.name-graduate-bg-light h4 {
+  color: var(--text-grey-bg-light);
+  font-weight: 500;
+}
+
+/* Graduate BgLight */
+.name-graduate-bg-light p {
+  color: var(--graduate-color-bg-light);
+  font-size: 0.8rem;
+}
+
+/* Daniel Clifford */
+#daniel-clifford::after {
+  content: "";
+  height: 200px;
+  width: 200px;
+  position: absolute;
+
+  top: 50px;
+  left: 60%;
+  background: url(../images/bg-pattern-quotation.svg) no-repeat;
+}
+
+#daniel-clifford {
+  background-color: var(--daniel-violet);
+}
+
+/* Jonathan Walters */
+#jonathan-walters {
+  background-color: var(--jonathan-very-dark-grayish-blue);
+}
+
+/* Jeanette Harmon */
+#jeanette-harmon {
+  background-color: var(--White);
+}
+
+/* Patrick Abrams */
+#patrick-abrams {
+  background-color: var(--patrick-very-dark);
+}
+
+/* Kira Whittle */
+#kira-whittle {
+  background-color: var(--White);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+
+  body {
+    height: 94vh;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+
+    gap: 20px;
+
+    margin-bottom: 0;
+  }
+
+  #daniel-clifford {
+    grid-area: daniel;
+  }
+  #jonathan-walters {
+    grid-area: jonathan;
+  }
+  #kira-whittle {
+    grid-area: kira;
+  }
+  #jeanette-harmon {
+    grid-area: jeanette;
+  }
+  #patrick-abrams {
+    grid-area: patrick;
+  }
+
+  #daniel-clifford::after {
+    left: 40%;
+  }
+}

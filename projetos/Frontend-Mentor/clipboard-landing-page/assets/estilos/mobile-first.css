@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  /* margin */
+  --m-peq: 1rem; /* 16px */
+  --m-med: 1.5rem; /* 24px */
+  --m-gr: 2rem; /* 32px */
+  --m-xxl: 3rem; /* 48px */
+
+  /* padding */
+  --p-peq: 1rem; /* 16px */
+  --p-med: 1.5rem; /* 24px */
+  --p-gr: 2rem; /* 32px */
+  --p-xxl: 3rem; /* 48px */
+
+  /* Primary */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* Neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 25px;
+}
+
+/* Header */
+header {
+  background: url(../images/bg-header-mobile.png) no-repeat;
+  background-size: cover;
+
+  text-align: center;
+
+  padding: var(--p-gr);
+}
+
+.textHeader h1 {
+  margin: var(--m-peq) 0;
+}
+
+.textHeader p {
+  margin-bottom: var(--m-gr);
+}
+
+/* Download Button */
+.downloadButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.downloadButtons button {
+  border-radius: 50px;
+  border: none;
+  padding: var(--p-peq);
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.downloadButtons button:hover {
+  filter: brightness(1.05);
+}
+
+.foriOS {
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 2px 0px 2px hsl(233, 61%, 58%);
+}
+
+.forMac {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0px 2px 0px 2px hsl(171, 66%, 38%);
+}
+
+/* Mac Monitor Section */
+#keepTrack {
+  margin: var(--m-gr);
+  text-align: center;
+}
+
+#keepTrack h3 {
+  font-size: 2rem;
+}
+
+#keepTrack p {
+  margin: var(--m-peq);
+}
+
+#macSection {
+  text-align: center;
+}
+
+/* Img Mac */
+.imgMac {
+  padding: var(--p-gr);
+}
+
+.imgMac img {
+  max-width: 100%;
+}
+
+/* Bottom Mac Monitor Tex */
+.listMacSection {
+  margin: var(--m-gr);
+}
+
+.listMacSection h4 {
+  margin: 10px 0;
+}
+
+/* Devices */
+#devices {
+  margin: var(--m-xxl) var(--m-gr);
+  display: flex;
+  flex-flow: column-reverse wrap;
+  gap: 40px;
+
+  text-align: center;
+}
+
+.imgDevices img {
+  max-width: 100%;
+}
+
+#accessClipboard h3 {
+  font-size: 2rem;
+  margin: var(--m-peq);
+}
+
+#supercharge {
+  margin: var(--m-gr);
+  text-align: center;
+}
+
+#supercharge h3 {
+  font-size: 2rem;
+  margin-bottom: var(--m-peq);
+}
+
+/* Aside */
+aside {
+  margin: var(--m-gr);
+  text-align: center;
+}
+
+#cps h4 {
+  margin-bottom: var(--m-peq);
+}
+
+#cps p {
+  margin-bottom: var(--m-gr);
+}
+
+#cps .cpsImg {
+  margin-bottom: var(--p-peq);
+}
+
+/* Logos */
+#logos {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+
+  margin: var(--m-xxl) 0;
+}
+
+/* Clipboard for iOS and Mac */
+aside .iosAndMac .textIosAndMac h3 {
+  font-size: 2rem;
+  margin: var(--m-peq);
+}
+
+aside .iosAndMac .textIosAndMac p {
+  margin-bottom: var(--m-gr);
+}
+
+/* Footer */
+footer {
+  --Grayish-Blue: rgb(226, 226, 226);
+  background-color: var(--Grayish-Blue);
+
+  text-align: center;
+
+  padding: var(--p-gr) 0;
+}
+
+footer img {
+  width: 50px;
+  margin: var(--m-peq);
+}
+
+footer .links1,
+footer .links2,
+footer .links3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: var(--m-peq);
+}
+
+footer .links1 a,
+footer .links2 a,
+footer .links3 a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  width: 15%;
+  margin: auto;
+}
+
+footer .links1 a:hover,
+footer .links2 a:hover,
+footer .links3 a:hover {
+  text-decoration: underline;
+  color: var(--Strong-Cyan);
+}
+
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  margin-top: var(--m-gr);
+}
+
+footer .icons a {
+  transition: transform 0.7s ease-in-out;
+}
+
+footer .icons a:hover {
+  transform: translateY(-10px);
+}
+
+footer .icons a:hover svg path {
+  fill: var(--Strong-Cyan);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .downloadButtons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .downloadButtons button {
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .downloadButtons button:hover {
+    transform: scale(1.05);
+  }
+
+  #macSection .listMac {
+    display: flex;
+    text-align: start;
+    width: 90%;
+    margin: var(--m-gr) auto;
+  }
+
+  #devices {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #cps {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 5% var(--m-xxl) 10%;
+  }
+
+  #cps .createBlacklists,
+  #cps .plainTextSnippets,
+  #cps .sneakPreview {
+    width: 100%;
+    margin: auto;
+  }
+
+  #logos {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    margin-bottom: 10%;
+  }
+
+  #logos div > img {
+    width: 80px;
+  }
+  .iosAndMac {
+    margin-bottom: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+  }
+
+  .downloadButtons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .downloadButtons button {
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .downloadButtons button:hover {
+    transform: scale(1.05);
+  }
+
+  #keepTrack {
+    margin-top: 10%;
+  }
+
+  #keepTrack p {
+    width: 50%;
+    margin: var(--m-med) auto;
+  }
+
+  #macSection {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #macSection .listMac {
+    text-align: start;
+    width: 80%;
+    margin: auto;
+  }
+
+  #macSection .imgMac img {
+    width: 500px;
+  }
+
+  #devices {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #cps {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 5% var(--m-xxl) 10%;
+  }
+
+  #cps .createBlacklists,
+  #cps .plainTextSnippets,
+  #cps .sneakPreview {
+    width: 30%;
+    margin: auto;
+  }
+
+  #logos {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 10%;
+  }
+
+  .iosAndMac {
+    margin-bottom: 10%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: var(--m-xxl);
+  }
+
+  footer .links1 a,
+  footer .links2 a,
+  footer .links3 a {
+    width: 50%;
+  }
+}
