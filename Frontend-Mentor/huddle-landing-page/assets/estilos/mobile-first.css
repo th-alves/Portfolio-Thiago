@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --title-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* Primary */
+  --Button-bg: hsl(322, 100%, 66%);
+
+  /* Neutral */
+  --Bg-header: hsl(193, 100%, 96%);
+  --Title-color: hsl(192, 100%, 9%);
+  --Paragraphs: hsl(208, 11%, 55%);
+
+  /* padding */
+  --padding-peq: 1rem;
+  --padding-med: 1.5rem;
+  --padding-gr: 2rem;
+  --padding-xxl: 3rem;
+
+  /* margin */
+  --margin-peq: 1rem;
+  --margin-med: 1.5rem;
+  --margin-gr: 2rem;
+  --margin-xxl: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--Title-color);
+}
+
+p {
+  color: var(--Paragraphs);
+}
+
+/* Header */
+header {
+  background: url(../images/bg-hero-mobile.svg) no-repeat var(--Bg-header);
+  background-size: cover;
+}
+
+/* Topbar */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--padding-peq);
+}
+
+.topBarBtn {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9rem;
+
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.2);
+
+  padding: 10px var(--padding-peq);
+}
+
+.topBarBtn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.topBar img {
+  width: 8rem;
+}
+
+/* About Huddle */
+#aboutHuddle {
+  text-align: center;
+  padding: var(--padding-gr);
+}
+
+#aboutHuddle .about h1 {
+  margin-bottom: var(--margin-peq);
+}
+
+#aboutHuddle .about p {
+  margin-bottom: var(--margin-gr);
+  color: var(--Titles);
+  line-height: 25px;
+}
+
+/* General Button */
+.generalButton {
+  background-color: var(--Button-bg);
+  padding: var(--padding-peq);
+  border-radius: 50px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.generalButton:hover {
+  filter: brightness(1.1);
+}
+
+.generalButton .btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#aboutHuddle img {
+  max-width: 100%;
+}
+
+/* Cards */
+#growTogether,
+#flowingConversations,
+#yourUsers {
+  width: 90%;
+  margin: var(--margin-xxl) auto;
+  padding: var(--padding-gr);
+
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#growTogether .growText,
+#flowingConversations .flowingText,
+#yourUsers .yourUsersText {
+  text-align: center;
+}
+
+#growTogether .growText h3,
+#flowingConversations .flowingText h3,
+#yourUsers .yourUsersText h3 {
+  margin: var(--margin-peq) 0;
+}
+
+#growTogether .growText p,
+#flowingConversations .flowingText p,
+#yourUsers .yourUsersText p {
+  line-height: 30px;
+}
+
+#growTogether img,
+#flowingConversations img,
+#yourUsers img {
+  max-width: 100%;
+}
+
+/* Aside */
+aside {
+  position: relative;
+  top: 150px;
+  width: 90%;
+  margin: var(--margin-xxl) auto;
+  padding: var(--padding-gr);
+
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+aside h2 {
+  text-align: center;
+  margin-bottom: var(--margin-gr);
+}
+
+/* Footer */
+footer {
+  background-color: var(--Title-color);
+  color: #fff;
+
+  padding: 10rem var(--padding-gr);
+}
+
+.contact .logo {
+  margin-bottom: var(--margin-gr);
+}
+
+.infos .location,
+.phone,
+.email {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: var(--margin-gr);
+}
+
+/* Links Footer */
+.linksFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linksFooter a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.linksFooter a:hover {
+  text-decoration: underline;
+}
+
+/* Icons */
+.icon {
+  width: 1.25rem;
+}
+
+#location {
+  width: 2rem;
+}
+
+#facebook {
+  width: 1rem;
+}
+
+.socialMedia {
+  margin: var(--margin-xxl) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  fill: #fff;
+}
+
+.instagram i,
+.facebook i,
+.twitter i {
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #fff;
+}
+
+#copy {
+  text-align: center;
+  color: #fff;
+}
+
+/* Media Querie PC */
+@media screen and (min-width: 1024px) {
+  /* topBar */
+  .topBar {
+    margin: 0 var(--margin-xxl);
+  }
+
+  /* About Huddle */
+  #aboutHuddle {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    align-items: center;
+    text-align: start;
+
+    margin: 0 var(--margin-gr);
+  }
+
+  #aboutHuddle .about h1 {
+    font-size: 2.5rem;
+  }
+
+  #aboutHuddle .about {
+    width: 70%;
+  }
+
+  .generalButton {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  /* Cards */
+  #growTogether,
+  #flowingConversations,
+  #yourUsers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+  }
+
+  #growTogether .growText,
+  #flowingConversations .flowingText,
+  #yourUsers .yourUsersText {
+    text-align: start;
+  }
+
+  #growTogether .growText h3,
+  #flowingConversations .flowingText h3,
+  #yourUsers .yourUsersText h3 {
+    font-size: 2rem;
+  }
+
+  #growTogether .growText p,
+  #flowingConversations .flowingText p,
+  #yourUsers .yourUsersText p {
+    width: 80%;
+  }
+
+  #growTogether .growImg {
+    order: 2;
+  }
+
+  #yourUsers .yourUsersImg {
+    order: 1;
+  }
+
+  /* Aside */
+  aside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+  }
+
+  footer .linksFooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: var(--margin-xxl);
+  }
+
+  #copy {
+    position: relative;
+    left: 190%;
+  }
+}
